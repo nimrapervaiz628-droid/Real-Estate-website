@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details | Velora Estates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="details-page">
+    <header class="detail-nav">
+        <a class="back-link" href="index.html">← Back to listings</a>
+        <div class="footer-logo">VELORA</div>
+    </header>
+
+    <main class="property-detail-page">
+        <section class="detail-hero">
+            <img id="propertyImage" src="" alt="Property image">
+            <div class="detail-info">
+                <p class="eyebrow dark">Featured Property</p>
+                <h1 id="propertyTitle">Property Title</h1>
+                <div class="detail-meta">
+                    <span id="propertyLocation">Location</span>
+                    <span id="propertyPrice">$0</span>
+                </div>
+                <p id="propertyDescription" class="detail-description"></p>
+
+                <div class="spec-grid" id="propertySpecs">
+                    <div><strong>Bedrooms</strong><span>0</span></div>
+                    <div><strong>Bathrooms</strong><span>0</span></div>
+                    <div><strong>Area</strong><span>0 sq ft</span></div>
+                    <div><strong>Type</strong><span>Single Family</span></div>
+                </div>
+
+                <div class="action-row">
+                    <a class="primary-btn" href="index.html#contact">Schedule a Visit</a>
+                    <a class="secondary-btn" href="index.html">Back to Homes</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-content">
+            <div class="detail-panel">
+                <h2>Property Overview</h2>
+                <ul id="overviewList"></ul>
+            </div>
+
+            <aside class="detail-aside">
+                <h3>Why buyers love it</h3>
+                <p id="whyLoveIt">This property offers the ideal mix of comfort, elegance, and location.</p>
+            </aside>
+        </section>
+
+        <section class="premium-showcase">
+            <div class="section-heading left-align">
+                <p class="eyebrow dark">Gallery</p>
+                <h2>Luxury at every angle</h2>
+            </div>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Exterior view">
+                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Kitchen interior">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80" alt="Living room interior">
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Outdoor patio">
+            </div>
+        </section>
+
+        <section class="feature-strip">
+            <div class="mini-stat">
+                <span>Property Status</span>
+                <strong>Available Now</strong>
+            </div>
+            <div class="mini-stat">
+                <span>Year Built</span>
+                <strong>2018</strong>
+            </div>
+            <div class="mini-stat">
+                <span>Heating</span>
+                <strong>Central HVAC</strong>
+            </div>
+            <div class="mini-stat">
+                <span>Parking</span>
+                <strong>2 Car Garage</strong>
+            </div>
+        </section>
+
+        <section class="agent-contact">
+            <div class="agent-card">
+                <div class="agent-head">
+                    <div class="agent-avatar">AR</div>
+                    <div>
+                        <h3>Ariana Ross</h3>
+                        <p>Senior Property Consultant</p>
+                    </div>
+                </div>
+                <div class="agent-meta">
+                    <span>+1 (310) 456-7890</span>
+                    <span>ariana@veloraestates.com</span>
+                </div>
+            </div>
+
+            <form class="inquiry-form">
+                <h3>Request a private showing</h3>
+                <div class="input-row">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-row">
+                    <input type="tel" placeholder="Phone Number">
+                    <input type="text" placeholder="Preferred Date">
+                </div>
+                <textarea placeholder="Tell us what you're looking for..."></textarea>
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </section>
+
+        <section class="similar-listings">
+            <div class="section-heading left-align">
+                <p class="eyebrow dark">More homes</p>
+                <h2>Similar listings</h2>
+            </div>
+            <div class="similar-grid">
+                <article class="similar-card">
+                    <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=900&q=80" alt="Penthouse home">
+                    <div>
+                        <h3>Horizon Penthouse</h3>
+                        <p>$510,000</p>
+                    </div>
+                </article>
+                <article class="similar-card">
+                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=900&q=80" alt="Modern townhouse">
+                    <div>
+                        <h3>Oakline Townhouse</h3>
+                        <p>$445,000</p>
+                    </div>
+                </article>
+                <article class="similar-card">
+                    <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80" alt="Waterfront villa">
+                    <div>
+                        <h3>Harborview Villa</h3>
+                        <p>$610,000</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const properties = {
+            'modern-family-villa': {
+                title: 'Modern Family Villa',
+                price: '$420,000',
+                location: 'Beverly Hills, CA',
+                description: 'A stunning family villa designed for effortless modern living, combining warm interiors, open-concept entertaining spaces, and a welcoming outdoor retreat.',
+                image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80',
+                specs: {
+                    bedrooms: '3',
+                    bathrooms: '2',
+                    area: '2,150 sq ft',
+                    type: 'Single Family'
+                },
+                features: ['Open-plan dining and lounge spaces', 'Private landscaped backyard', 'Modern kitchen with island seating', 'Natural light throughout the home'],
+                why: 'Its calm, elegant design and convenient location make it perfect for growing families who want both comfort and lifestyle.'
+            },
+            'cozy-family-home': {
+                title: 'Cozy Family Home',
+                price: '$365,000',
+                location: 'Austin, TX',
+                description: 'This inviting home offers tailored spaces for family life, with cozy rooms, generous storage, and a breezy layout that feels warm and practical.',
+                image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+                specs: {
+                    bedrooms: '4',
+                    bathrooms: '2',
+                    area: '1,980 sq ft',
+                    type: 'Single Family'
+                },
+                features: ['Spacious family lounge', 'Large kitchen with pantry', 'Well-kept front yard', 'Quiet residential neighborhood'],
+                why: 'It balances comfort, value, and a lifestyle-focused location that keeps daily life easy and enjoyable.'
+            },
+            'luxury-residence': {
+                title: 'Luxury Residence',
+                price: '$560,000',
+                location: 'Miami, FL',
+                description: 'An elevated residence with generous proportions, premium finishes, and an enviable indoor-outdoor flow suited for refined living.',
+                image: 'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
+                specs: {
+                    bedrooms: '5',
+                    bathrooms: '3',
+                    area: '2,650 sq ft',
+                    type: 'Single Family'
+                },
+                features: ['Luxury master suite', 'Sunlit terrace and pool area', 'Designer finishes throughout', 'High-end entertainment spaces'],
+                why: 'This residence brings a premium blend of style, sophistication, and comfort that stands out in any market.'
+            },
+            'suburban-haven': {
+                title: 'Suburban Haven',
+                price: '$390,000',
+                location: 'Seattle, WA',
+                description: 'A refined suburban retreat with soft natural textures, generous room sizes, and a friendly neighborhood atmosphere that makes every day feel easy.',
+                image: 'https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1200&q=80',
+                specs: {
+                    bedrooms: '3',
+                    bathrooms: '2',
+                    area: '2,120 sq ft',
+                    type: 'Single Family'
+                },
+                features: ['Comfortable open-concept living', 'Private backyard and patio', 'Spacious bedrooms', 'Easy access to local amenities'],
+                why: 'Its peaceful setting, practical design, and welcoming layout make it ideal for everyday family life.'
+            }
+        };
+
+        const propertyId = new URLSearchParams(window.location.search).get('id') || 'modern-family-villa';
+        const property = properties[propertyId] || properties['modern-family-villa'];
+
+        document.getElementById('propertyImage').src = property.image;
+        document.getElementById('propertyImage').alt = property.title;
+        document.getElementById('propertyTitle').textContent = property.title;
+        document.getElementById('propertyLocation').textContent = property.location;
+        document.getElementById('propertyPrice').textContent = property.price;
+        document.getElementById('propertyDescription').textContent = property.description;
+        document.getElementById('whyLoveIt').textContent = property.why;
+
+        const specsEl = document.getElementById('propertySpecs');
+        specsEl.innerHTML = `
+            <div><strong>Bedrooms</strong><span>${property.specs.bedrooms}</span></div>
+            <div><strong>Bathrooms</strong><span>${property.specs.bathrooms}</span></div>
+            <div><strong>Area</strong><span>${property.specs.area}</span></div>
+            <div><strong>Type</strong><span>${property.specs.type}</span></div>
+        `;
+
+        const listEl = document.getElementById('overviewList');
+        listEl.innerHTML = property.features.map(feature => `<li>${feature}</li>`).join('');
+    </script>
+</body>
+</html>
